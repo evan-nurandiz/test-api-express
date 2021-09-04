@@ -86,13 +86,9 @@ router.delete('/delete-:id', validateToken, async (req, res) => {
             })
         }
     } catch (err) {
-        const errObj = {};
-        err.errors.map(er => {
-            errObj[er.path] = er.message;
-        })
         return res.status(404).json({
             message: 'fail to delete contact',
-            error: errObj
+            error: 'contact not found'
         })
     }
 })
