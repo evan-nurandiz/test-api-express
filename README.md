@@ -2,6 +2,8 @@
 
 
 
+
+
 ## Installation
 Test Pembuatan Api Express
 
@@ -9,6 +11,18 @@ Test Pembuatan Api Express
 ```bash
 npm start
 ```
+
+in config/config.js
+```bash
+"development": {
+    "username": db.username,
+    "password": db.password,
+    "database": db.table,
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+```
+
 
 ## Usage
 
